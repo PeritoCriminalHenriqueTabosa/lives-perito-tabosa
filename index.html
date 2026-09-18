@@ -316,7 +316,7 @@ footer a:hover{color:var(--amarelo)}
 <div class="trust"><div class="wrap row">
   <div class="it"><span class="ic">🔴</span><span><b>Ao vivo</b> toda quarta, 21h</span></div>
   <div class="it"><span class="ic">📜</span><span><b>Certificado de 2h</b> grátis, na noite da live</span></div>
-  <div class="it"><span class="ic">🎓</span><span><b>Aula gravada</b> por R$ 29,90 ou Acesso Total</span></div>
+  <div class="it"><span class="ic">🎓</span><span><b>Aula gravada</b> (certificado 4h) por R$ 29,90 ou Acesso Total</span></div>
   <div class="it"><span class="ic">💬</span><span><b>Comunidade</b> no WhatsApp</span></div>
 </div></div>
 
@@ -384,7 +384,7 @@ footer a:hover{color:var(--amarelo)}
     <div><div class="tag">// PERDEU A LIVE? A AULA FICA COM VOCÊ</div><h2>Aulas gravadas</h2></div>
     <div class="count" id="count-aulas"></div>
   </div>
-  <p class="lead">A live sai do ar depois de alguns dias. A <b>aula gravada</b> fica: vídeo completo, slides, resumo em PDF e certificado. Compre uma por vez ou leve todas com o Acesso Total.</p>
+  <p class="lead">A live sai do ar depois de alguns dias. A <b>aula gravada</b> fica: vídeo completo, slides, resumo em PDF e <b>certificado de 4h</b>. Compre uma por vez ou leve todas com o Acesso Total.</p>
 
   <!-- ===== ACESSO TOTAL (mesmos links da Loja CSI) ===== -->
   <div class="digi-card acesso-total">
@@ -396,7 +396,7 @@ footer a:hover{color:var(--amarelo)}
         <li>✅ <b>Todas as aulas</b> do acervo (caso real + técnica pericial)</li>
         <li>✅ <b>Novas aulas toda semana</b>, já incluídas</li>
         <li>✅ Gravação completa: <b>vídeo + slides + resumo</b></li>
-        <li>✅ <b>Certificado</b> por aula assistida</li>
+        <li>✅ <b>Certificado de 4h</b> por aula assistida</li>
       </ul>
       <div class="planos">
         <a class="plano destaque hotmart-fb hotmart__button-checkout"
@@ -466,8 +466,9 @@ footer a:hover{color:var(--amarelo)}
 <section class="faq"><div class="wrap" style="max-width:780px">
   <h2>Perguntas frequentes</h2>
   <details><summary>Como recebo o certificado de 2h gratuito?</summary><p>Assista à live ao vivo na quarta, às 21h. No fim eu revelo a <b>palavra-chave da semana</b>. Você manda essa palavra no nosso WhatsApp entre <b>22h e meia-noite</b> da mesma quarta, informa nome, CPF e e-mail, e o PDF chega no seu e-mail. É 1 certificado por live, por pessoa.</p></details>
+  <details><summary>Qual a diferença entre o certificado de 2h e o de 4h?</summary><p>O de <b>2h</b> é grátis e vale pela live ao vivo (palavra-chave no WhatsApp). O de <b>4h</b> vem com a aula gravada (avulsa por R$ 29,90 ou no Acesso Total): live + vídeo + slides + resumo, por isso conta mais horas.</p></details>
   <details><summary>O certificado vale como hora complementar?</summary><p>É um certificado de curso livre (extensão). A maioria das graduações aceita como atividade complementar — confira a regra da sua instituição. Não substitui graduação nem habilita para concurso.</p></details>
-  <details><summary>Perdi a live. E agora?</summary><p>A live fica no ar por alguns dias e depois sai. Se quiser guardar, compre a <b>aula gravada por R$ 29,90</b> (vídeo completo, slides, resumo e certificado) ou assine o <b>Acesso Total</b>, que já inclui todas as aulas gravadas e as próximas.</p></details>
+  <details><summary>Perdi a live. E agora?</summary><p>A live fica no ar por alguns dias e depois sai. Se quiser guardar, compre a <b>aula gravada por R$ 29,90</b> (vídeo completo, slides, resumo e certificado de 4h) ou assine o <b>Acesso Total</b>, que já inclui todas as aulas gravadas e as próximas.</p></details>
   <details><summary>Vale mais a aula avulsa ou o Acesso Total?</summary><p>Se você vai acompanhar mais de 8 aulas, o Acesso Total compensa: o anual (R$ 297) dá menos de R$ 30 por mês e inclui todas as novas do ano. A avulsa é para quem quer só um tema específico.</p></details>
   <details><summary>Como funciona o pagamento?</summary><p>Ao clicar em comprar, o checkout seguro da Hotmart abre aqui mesmo na página. Você paga com Pix, cartão ou boleto. Garantia de 7 dias.</p></details>
   <details><summary>Funciona no celular?</summary><p>Sim. A live passa no app do YouTube e no Instagram; a aula gravada abre na área do aluno da Hotmart, no celular ou no computador. O certificado chega por e-mail.</p></details>
@@ -538,7 +539,7 @@ function cardAulaHTML(a){
       <div class="data">${a.data} · QUARTA · 21H</div>
       <div class="caso">${a.caso}</div>
       <div class="tema">${a.tema}</div>
-      <div class="cert">🎓 Vídeo + slides + resumo + certificado</div>
+      <div class="cert">🎓 Vídeo + slides + resumo + certificado de 4h</div>
       <a class="buy hotmart-fb hotmart__button-checkout" href="${link}"
          onclick="fbq&&fbq('track','InitiateCheckout',{content_name:'Aula ${a.n}',value:29.90,currency:'BRL'})">
         <span>Comprar a aula</span><span>R$ ${PRECO}</span>
