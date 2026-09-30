@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<title>Calendário das Lives 2026.2 | Perito Henrique Tabosa</title>
+<meta name="description" content="Calendário completo das lives semanais da perícia 2026.2 — toda quarta às 21h, ao vivo no YouTube e no Instagram, com certificado gratuito.">
+<meta property="og:title" content="Calendário das Lives da Perícia 2026.2">
+<meta property="og:description" content="Toda quarta, 21h. Caso real + técnica pericial. Veja as datas, assista ao vivo ou pegue a aula gravada com certificado 4h.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a; --bg2:#151515; --line:#2c2c2c; --mut:#8c8c8c; --tan:#cfcfcf; --cream:#f4f4f4; --red:#c62828; --yellow:#FFD400;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px 60px}
+.tape{background:var(--yellow);color:#111;font-family:'Special Elite',monospace;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:8px 10px;white-space:nowrap;overflow:hidden}
+header{padding:34px 0 22px;text-align:center;border-bottom:1px dashed var(--line)}
+.kicker{font-family:'Special Elite',monospace;color:var(--tan);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem}
+h1{font-family:'Special Elite',monospace;font-size:clamp(1.9rem,7vw,2.8rem);line-height:1.05;margin:10px 0 12px}
+h1 span{display:block;color:var(--yellow)}
+.sub{color:var(--tan);font-size:.98rem;max-width:520px;margin:0 auto}
+.badge-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.badge{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.8rem;color:var(--tan);background:var(--bg2)}
+.next{margin:26px 0 10px;border:2px solid var(--yellow);border-radius:14px;background:var(--bg2);padding:18px;position:relative;overflow:hidden}
+.next::before{content:"PRÓXIMA LIVE";position:absolute;top:0;right:0;background:var(--yellow);color:#111;font-family:'Special Elite',monospace;font-size:.7rem;letter-spacing:.15em;padding:5px 12px;border-bottom-left-radius:10px}
+.next .date{font-family:'Special Elite',monospace;font-size:1.6rem;color:var(--yellow);line-height:1}
+.next .date small{display:block;font-size:.85rem;color:var(--tan);letter-spacing:.1em;margin-top:4px}
+.next h2{font-size:1.15rem;margin:12px 0 4px;font-weight:700}
+.next p{color:var(--tan);font-size:.93rem}
+.countdown{margin-top:10px;font-family:'Special Elite',monospace;color:var(--cream);font-size:.95rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{flex:1 1 200px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;font-size:.92rem;padding:13px 14px;border-radius:10px;border:1px solid transparent;transition:transform .12s ease}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--red);color:#fff}
+.btn.yellow{background:var(--yellow);color:#111}
+.btn.ghost{background:transparent;border-color:var(--tan);color:var(--cream)}
+.btn.small{flex:0 1 auto;padding:9px 12px;font-size:.84rem;text-align:center}
+.item>div{min-width:0}
+.section-title{font-family:'Special Elite',monospace;color:var(--tan);letter-spacing:.15em;text-transform:uppercase;font-size:.82rem;margin:34px 0 12px;display:flex;align-items:center;gap:10px}
+.section-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:grid;grid-template-columns:78px 1fr;gap:14px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px;align-items:start}
+.item.past{opacity:.92}
+.item .d{font-family:'Special Elite',monospace;text-align:center;border-right:1px dashed var(--line);padding-right:10px}
+.item .d b{display:block;font-size:1.45rem;line-height:1;color:var(--cream)}
+.item .d small{display:block;color:var(--mut);font-size:.72rem;letter-spacing:.1em;margin-top:4px}
+.item .d em{display:block;font-style:normal;color:var(--tan);font-size:.78rem;margin-top:6px}
+.item .aula{font-size:.72rem;letter-spacing:.14em;color:var(--mut);text-transform:uppercase;font-family:'Special Elite',monospace}
+.item h3{font-size:1rem;margin:3px 0 2px;font-weight:700}
+.item p{color:var(--tan);font-size:.88rem}
+.item .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.tag{font-size:.72rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--mut)}
+.tag.ok{border-color:#3f6b3a;color:#9fd39a}
+.tag.tbd{border-color:var(--line);color:var(--tan)}
+.tag.soon{border-color:var(--yellow);color:var(--yellow)}
+.total{margin-top:26px;border:1px solid var(--yellow);border-radius:14px;padding:18px;background:linear-gradient(180deg,#1a1a1a,#111)}
+.total h2{font-family:'Special Elite',monospace;font-size:1.3rem;color:var(--yellow)}
+.total p{color:var(--tan);font-size:.92rem;margin:6px 0 4px}
+.total ul{list-style:none;margin:10px 0 4px}
+.total li{padding:3px 0;font-size:.9rem}
+.total li::before{content:"✓ ";color:#9fd39a}
+.poster{margin-top:30px;text-align:center}
+.poster img{width:100%;max-width:560px;border-radius:12px;border:1px solid var(--line)}
+.poster a.dl{display:inline-block;margin-top:10px;color:var(--tan);font-size:.85rem}
+.how{margin-top:30px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.how h2{font-family:'Special Elite',monospace;font-size:1.05rem;color:var(--cream);margin-bottom:8px}
+.how ol{padding-left:20px;color:var(--tan);font-size:.9rem}
+.how li{margin:4px 0}
+footer{margin-top:40px;text-align:center;color:var(--mut);font-size:.8rem;line-height:1.7}
+footer a{color:var(--tan);text-decoration:none}
+@media (max-width:400px){.item{grid-template-columns:66px 1fr;gap:10px}}
+</style>
+</head>
+<body>
+<div class="tape">Crime scene — do not cross · Lives semanais da perícia · 2026.2 · Crime scene — do not cross</div>
+
+<div class="wrap">
+<header>
+  <div class="kicker">Toda quarta · 21h · ao vivo</div>
+  <h1>Calendário das Lives<span>da Perícia 2026.2</span></h1>
+  <p class="sub">Caso real + técnica pericial, com o perito criminal Henrique Tabosa. Gratuito, sem inscrição, com certificado de 2h para quem assiste ao vivo.</p>
+  <div class="badge-row">
+    <span class="badge">▶️ YouTube</span>
+    <span class="badge">📸 Instagram</span>
+    <span class="badge">🎓 Certificado grátis</span>
+  </div>
+</header>
+
+<section class="next" id="next"></section>
+
+<div class="section-title">Bloco B · aulas 11 a 20</div>
+<div class="list" id="listB"></div>
+
+<div class="section-title">Bloco A · aulas 1 a 10 (já aconteceram)</div>
+<div class="list" id="list"></div>
+
+<section class="total">
+  <h2>Quer todas as aulas de uma vez?</h2>
+  <p>O <b>Acesso Total</b> libera as aulas de 2026.2 gravadas — vídeo, slides, resumo e certificado de 4h de cada — e as do Bloco B entram conforme forem ao ar, enquanto o plano estiver ativo.</p>
+  <ul>
+    <li>Plano anual: R$ 297,00 (ou 12x no cartão)</li>
+    <li>Plano semestral: R$ 247,00</li>
+  </ul>
+  <div class="btns">
+    <a class="btn yellow" href="https://pay.hotmart.com/G106657014T?off=ve0ehw8j&src=1a1a3" target="_blank" rel="noopener">Assinar o anual — R$ 297</a>
+    <a class="btn ghost" href="https://pay.hotmart.com/G106657014T?bid=1787577147095" target="_blank" rel="noopener">Semestral — R$ 247</a>
+  </div>
+</section>
+
+
+<section class="how">
+  <h2>Como funciona o certificado gratuito</h2>
+  <ol>
+    <li>Assista à live ao vivo na quarta, às 21h (YouTube ou Instagram).</li>
+    <li>Durante a live, o Henrique anuncia a palavra-chave da semana.</li>
+    <li>Envie a palavra-chave no WhatsApp do atendimento entre 22h e 00h da mesma quarta.</li>
+    <li>Informe nome, CPF e e-mail — o certificado de 2h chega em PDF.</li>
+  </ol>
+</section>
+
+<footer>
+  <a href="https://youtube.com/@peritocriminalhenriquetabosa" target="_blank" rel="noopener">youtube.com/@peritocriminalhenriquetabosa</a><br>
+  <a href="https://instagram.com/peritocriminalhenriquetabosa" target="_blank" rel="noopener">@peritocriminalhenriquetabosa</a><br>
+  Henrique Tabosa · Perito Criminal
+</footer>
+</div>
+
+<script>
+/* ============================================================
+   DADOS — edite aqui quando o calendário mudar.
+   data: AAAA-MM-DD (a live é sempre às 21h, horário de Brasília)
+   checkout: link da aula gravada (Hotmart). Sem checkout = "em breve".
+   ============================================================ */
+const YOUTUBE = "https://youtube.com/@peritocriminalhenriquetabosa/live";
+const INSTAGRAM = "https://instagram.com/peritocriminalhenriquetabosa";
+const LIVES = [
+  {n:"01", data:"2026-07-01", caso:"O Caso do apresentador Wallace Souza (AM)", tema:"Rotinas de trabalho e isolamento de locais", checkout:"https://pay.hotmart.com/J102023251W"},
+  {n:"02", data:"2026-07-08", caso:"O Caso do boxeador Arturo Gatti (PE)", tema:"Introdução à Medicina Legal e exame tanatoscópico", checkout:"https://pay.hotmart.com/L106655464O"},
+  {n:"03", data:"2026-07-15", caso:"O Caso Isabella Nardoni (SP)", tema:"Fotografia forense e desenho esquemático", checkout:"https://pay.hotmart.com/G101964005F"},
+  {n:"04", data:"2026-07-22", caso:"O Caso do serial killer de Curitiba (PR/SC)", tema:"Antropologia forense", checkout:"https://pay.hotmart.com/O102626457W"},
+  {n:"05", data:"2026-07-29", caso:"O Caso Eliza Samudio e goleiro Bruno (RJ/MG)", tema:"Tipos de locais de crime", checkout:"https://pay.hotmart.com/U101317609Y"},
+  {n:"06", data:"2026-08-12", caso:"O Caso da Boate Kiss (RS)", tema:"Tanatologia: fenômenos abióticos e consecutivos", checkout:"https://pay.hotmart.com/H101375280E"},
+  {n:"07", data:"2026-08-19", caso:"O Caso do indígena Galdino Pataxó (DF)", tema:"Análise de vestimentas", checkout:"https://pay.hotmart.com/J101255808C"},
+  {n:"08", data:"2026-08-26", caso:"O Caso do Enfermeiro da Morte (RJ)", tema:"Tanatologia: fenômenos transformativos, destrutivos e conservadores", checkout:"https://pay.hotmart.com/N101372440T"},
+  {n:"09", data:"2026-09-02", caso:"O Caso Elize Matsunaga (SP)", tema:"Como o lixo pode mudar o rumo da perícia criminal", checkout:"https://pay.hotmart.com/L102646659M"},
+  {n:"10", data:"2026-09-09", caso:"O Caso Marielle Franco — vereadora (RJ)", tema:"Interpretação de avarias em vidro por PAF", checkout:"https://pay.hotmart.com/D101701502L"},
+  /* ---------- Bloco B ---------- */
+  {n:"11", bloco:"B", data:"2026-10-07", caso:"O Caso Tatiane Spitzner (PR)", tema:"Asfixias", checkout:""},
+  {n:"12", bloco:"B", data:"2026-10-14", caso:"O Caso Daniel Corrêa (PR)", tema:"Luminol: a busca pelo sangue que não se vê", checkout:""},
+  {n:"13", bloco:"B", data:"2026-10-21", caso:"O furto ao Banco Central de Fortaleza (CE)", tema:"Impressões digitais", checkout:""},
+  {n:"14", bloco:"B", data:"2026-10-28", caso:"O Caso Helicoca (ES)", tema:"Identificação de drogas", checkout:""},
+  {n:"15", bloco:"B", data:"2026-11-04", caso:"O Caso Celso Daniel (SP)", tema:"Ferimentos por arma de fogo e arma branca", checkout:""},
+  {n:"16", bloco:"B", data:"2026-11-11", caso:"O Caso Richthofen (SP)", tema:"Manchas de sangue — parte 1", checkout:""},
+  {n:"17", bloco:"B", data:"2026-11-18", caso:"O Caso do Maníaco do Parque (SP)", tema:"Sexologia forense", checkout:""},
+  {n:"18", bloco:"B", data:"2026-11-25", caso:"O Crime da 113 Sul (DF)", tema:"Manchas de sangue — parte 2", checkout:""},
+  {n:"19", bloco:"B", data:"", caso:"O Caso Jango (RS)", tema:"Exumação", checkout:""},
+  {n:"20", bloco:"B", data:"", caso:"O Caso PC Farias (AL)", tema:"Reprodução simulada", checkout:""}
+];
+const PRECO_AULA = "R$ 29,90";
+
+/* ---------- utilidades ---------- */
+const MESES = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+const DIAS = ["dom","seg","ter","qua","qui","sex","sáb"];
+function startOf(l){ return new Date(l.data + "T21:00:00-03:00"); }
+function endOf(l){ return new Date(startOf(l).getTime() + 90*60*1000); }
+function pad(n){ return String(n).padStart(2,"0"); }
+function utcStamp(d){ return d.getUTCFullYear()+pad(d.getUTCMonth()+1)+pad(d.getUTCDate())+"T"+pad(d.getUTCHours())+pad(d.getUTCMinutes())+"00Z"; }
+function fmtDate(l){
+  const parts = new Intl.DateTimeFormat("pt-BR",{timeZone:"America/Recife",day:"2-digit",month:"2-digit",weekday:"short"}).formatToParts(startOf(l));
+  const g = t => (parts.find(x=>x.type===t)||{}).value || "";
+  const mi = parseInt(g("month"),10)-1;
+  return {dia:g("day"), mesNum:g("month"), mes:MESES[mi], sem:g("weekday").replace(".","")};
+}
+function gcalLink(l){
+  const t = "Live da Perícia — Aula "+l.n+": "+l.caso;
+  const det = l.tema+"\n\nAo vivo no YouTube: "+YOUTUBE+"\nInstagram: "+INSTAGRAM+"\n\nCertificado gratuito de 2h para quem assiste ao vivo.";
+  return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(t)+"&dates="+utcStamp(startOf(l))+"/"+utcStamp(endOf(l))+"&details="+encodeURIComponent(det)+"&location="+encodeURIComponent(YOUTUBE);
+}
+function icsLink(l){
+  const ics = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Perito Henrique Tabosa//Lives//PT","BEGIN:VEVENT",
+    "UID:live-"+l.n+"-2026-2@peritohenriquetabosa.com.br","DTSTAMP:"+utcStamp(new Date()),
+    "DTSTART:"+utcStamp(startOf(l)),"DTEND:"+utcStamp(endOf(l)),
+    "SUMMARY:Live da Perícia — Aula "+l.n+": "+l.caso,
+    "DESCRIPTION:"+l.tema.replace(/,/g,"\\,")+" — "+YOUTUBE,"URL:"+YOUTUBE,"END:VEVENT","END:VCALENDAR"].join("\r\n");
+  return "data:text/calendar;charset=utf-8,"+encodeURIComponent(ics);
+}
+
+/* ---------- render ---------- */
+const now = new Date();
+const upcoming = LIVES.filter(l => l.data && endOf(l) > now).sort((a,b)=>startOf(a)-startOf(b));
+const next = upcoming[0];
+const nextEl = document.getElementById("next");
+
+if (next){
+  const f = fmtDate(next);
+  const live = now >= startOf(next) && now <= endOf(next);
+  nextEl.innerHTML = `
+    <div class="date">${f.dia}/${f.mesNum} · 21h<small>${f.sem.toUpperCase()}-FEIRA · AULA ${next.n}</small></div>
+    <h2>${next.caso}</h2>
+    <p>${next.tema}</p>
+    <div class="countdown" id="countdown">${live ? "🔴 AO VIVO AGORA" : ""}</div>
+    <div class="btns">
+      <a class="btn primary" href="${YOUTUBE}" target="_blank" rel="noopener">▶️ ${live ? "Assistir agora" : "Assistir ao vivo no YouTube"}</a>
+      <a class="btn ghost" href="${INSTAGRAM}" target="_blank" rel="noopener">📸 Pelo Instagram</a>
+    </div>
+    <div class="btns">
+      <a class="btn yellow" href="${gcalLink(next)}" target="_blank" rel="noopener">📅 Adicionar à minha agenda (Google)</a>
+      <a class="btn ghost small" href="${icsLink(next)}" download="live-aula-${next.n}.ics">iPhone / Outlook (.ics)</a>
+    </div>`;
+  if (!live){
+    const cd = document.getElementById("countdown");
+    const tick = () => {
+      const ms = startOf(next) - new Date();
+      if (ms <= 0){ cd.textContent = "🔴 AO VIVO AGORA"; return; }
+      const d = Math.floor(ms/86400000), h = Math.floor(ms%86400000/3600000), m = Math.floor(ms%3600000/60000);
+      cd.textContent = "⏳ Começa em " + (d ? d+"d " : "") + h+"h " + pad(m)+"min";
+    };
+    tick(); setInterval(tick, 30000);
+  }
+} else {
+  nextEl.innerHTML = `
+    <div class="date">Em breve<small>PRÓXIMO SEMESTRE</small></div>
+    <h2>As datas das próximas lives serão divulgadas em breve.</h2>
+    <p>Enquanto isso, todas as aulas de 2026.2 estão disponíveis gravadas, com certificado de 4h.</p>
+    <div class="btns">
+      <a class="btn primary" href="${INSTAGRAM}" target="_blank" rel="noopener">📸 Seguir para ser avisado</a>
+    </div>`;
+}
+
+function cardHTML(l){
+  if (!l.data){
+    return `<article class="item">
+    <div class="d"><b>—</b><small>DATA</small><em>a definir</em></div>
+    <div>
+      <div class="aula">Aula ${l.n}</div>
+      <h3>${l.caso}</h3>
+      <p>${l.tema}</p>
+      <div class="row"><span class="tag tbd">Data em breve</span></div>
+    </div>
+  </article>`;
+  }
+  const f = fmtDate(l);
+  const past = endOf(l) < now;
+  const isNext = next && l.n === next.n;
+  let row;
+  if (past){
+    row = l.checkout
+      ? `<span class="tag ok">Já aconteceu · gravada disponível</span>
+         <a class="btn primary small" href="${l.checkout}" target="_blank" rel="noopener">🎓 Aula gravada + certificado 4h — ${PRECO_AULA}</a>`
+      : `<span class="tag">Já aconteceu</span>`;
+  } else {
+    row = `<span class="tag soon">${isNext ? "Próxima live" : "Em breve"}</span>
+           <a class="btn ghost small" href="${gcalLink(l)}" target="_blank" rel="noopener">📅 Lembrar-me</a>`;
+  }
+  return `<article class="item ${past ? "past" : ""}">
+    <div class="d"><b>${f.dia}</b><small>${f.mes.toUpperCase()}</small><em>${f.sem} · 21h</em></div>
+    <div>
+      <div class="aula">Aula ${l.n}</div>
+      <h3>${l.caso}</h3>
+      <p>${l.tema}</p>
+      <div class="row">${row}</div>
+    </div>
+  </article>`;
+}
+document.getElementById("listB").innerHTML = LIVES.filter(l => l.bloco === "B").map(cardHTML).join("");
+document.getElementById("list").innerHTML = LIVES.filter(l => l.bloco !== "B").map(cardHTML).join("");
+</script>
+</body>
+</html>
