@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lives.peritohenriquetabosa.com.br/sitemap.xml
