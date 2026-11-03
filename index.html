@@ -304,7 +304,7 @@ footer a:hover{color:var(--amarelo)}
       <div class="stats">
         <div><b>17 anos</b><span>de perícia criminal</span></div>
         <div><b>+1.800</b><span>locais de crime atendidos</span></div>
-        <div><b>10 aulas</b><span>gravadas no acervo</span></div>
+        <div><b>18 aulas</b><span>gravadas no acervo</span></div>
         <div><b>2h</b><span>de certificado grátis por live</span></div>
       </div>
     </div>
@@ -392,7 +392,7 @@ footer a:hover{color:var(--amarelo)}
     <div><div class="tag">// PERDEU A LIVE? A AULA FICA COM VOCÊ</div><h2>Aulas gravadas</h2></div>
     <div class="count" id="count-aulas"></div>
   </div>
-  <p class="lead">A live sai do ar depois de alguns dias. A <b>aula gravada</b> fica: vídeo completo, slides, resumo em PDF e <b>certificado de 4h</b> — que vale como horas complementares na maioria das graduações (as 10 aulas somam 40h). Compre uma por vez ou leve todas com o curso completo.</p>
+  <p class="lead">A live sai do ar depois de alguns dias. A <b>aula gravada</b> fica: vídeo completo, slides, resumo em PDF e <b>certificado de 4h</b> — que vale como horas complementares na maioria das graduações (cada aula conta 4h). Compre uma por vez ou leve todas com o curso completo.</p>
 
   <!-- ===== ACESSO TOTAL (mesmos links da Loja CSI) ===== -->
   <div class="digi-card acesso-total">
@@ -439,9 +439,9 @@ footer a:hover{color:var(--amarelo)}
     <span class="ic">🗓️</span>
     <div>
       <h3>Bloco B — aulas 11 a 20 · de 07/10 a 09/12</h3>
-      <p>Começa na quarta <b>07/10, às 21h</b>, com a <b>Aula 11 — O Caso Tatiane Spitzner (PR)</b>: como acontecem os principais quadros de asfixia em humanos. Depois vêm Daniel Corrêa, Banco Central, "Helicoca", Celso Daniel, Richthofen, Maníaco do Parque, 113 Sul, João Goulart e PC Farias. Quem é aluno do curso recebe as novas aulas automaticamente.</p>
+      <p>As aulas <b>11 a 18</b> já estão disponíveis abaixo, avulsas. As <b>19 e 20</b> entram no ar depois das lives de 02/12 e 09/12. Os casos: Tatiane Spitzner, Daniel Corrêa, Banco Central, "Helicoca", Celso Daniel, Richthofen, Maníaco do Parque, 113 Sul, João Goulart e PC Farias. Quem é aluno do curso recebe as novas aulas automaticamente.</p>
     </div>
-    <a class="btn btn-ghost btn-sm" href="calendario.html">🗓️ Ver as 10 datas</a>
+    <a class="btn btn-ghost btn-sm" href="calendario.html">🗓️ Ver as 20 datas</a>
   </div>
 </div></section>
 
@@ -531,7 +531,15 @@ const AULAS = [
   {n:"07", data:"19/08", caso:"O Caso do Indígena Galdino Pataxó (DF)", tema:"Análise de vestimentas", img:"aula-07-galdino-pataxo.webp", checkout:"https://pay.hotmart.com/J101255808C"},
   {n:"08", data:"26/08", caso:"O Caso do Enfermeiro da Morte (RJ)", tema:"Tanatologia: fenômenos transformativos, destrutivos e conservadores", img:"aula-08-enfermeiro-da-morte.webp", checkout:"https://pay.hotmart.com/N101372440T"},
   {n:"09", data:"02/09", caso:"O Caso Elize Matsunaga (SP)", tema:"Como o lixo pode mudar o rumo da perícia criminal", img:"aula-09-elize-matsunaga.webp", checkout:"https://pay.hotmart.com/L102646659M"},
-  {n:"10", data:"09/09", caso:"O Caso Marielle Franco (RJ)", tema:"Interpretação de avarias em vidros por PAF", img:"aula-10-marielle-franco.webp", checkout:"https://pay.hotmart.com/D101701502L"}
+  {n:"10", data:"09/09", caso:"O Caso Marielle Franco (RJ)", tema:"Interpretação de avarias em vidros por PAF", img:"aula-10-marielle-franco.webp", checkout:"https://pay.hotmart.com/D101701502L"},
+  {n:"11", data:"07/10", caso:"O Caso Tatiane Spitzner (PR)", tema:"Como acontecem os principais quadros de asfixia em humanos", img:"aula-11-tatiane-spitzner.webp", checkout:"https://pay.hotmart.com/C102625911E"},
+  {n:"12", data:"14/10", caso:"O Caso do Jogador Daniel Corrêa (PR)", tema:"Como fazer o uso de luminol em cenas de crime", img:"aula-12-daniel-correa.webp", checkout:"https://pay.hotmart.com/A102089931D"},
+  {n:"13", data:"21/10", caso:"O Caso do Furto ao Banco Central (CE)", tema:"Como se encontram as impressões digitais em locais de crime", img:"aula-13-banco-central.webp", checkout:"https://pay.hotmart.com/M102306516C"},
+  {n:"14", data:"28/10", caso:"O Caso “Helicoca” (ES)", tema:"Testes rápidos para drogas encontradas em cenas de crime", img:"aula-14-helicoca.webp", checkout:"https://pay.hotmart.com/J102326167D"},
+  {n:"15", data:"04/11", caso:"O Caso Celso Daniel (SP)", tema:"Características de lesões por arma de fogo e arma branca", img:"aula-15-celso-daniel.webp", checkout:"https://pay.hotmart.com/J102225383E"},
+  {n:"16", data:"11/11", caso:"O Caso Richthofen (SP)", tema:"Passo a passo para analisar manchas de sangue — parte 1", img:"aula-16-richthofen.webp", checkout:"https://pay.hotmart.com/S102748722L"},
+  {n:"17", data:"18/11", caso:"O Caso do Maníaco do Parque (SP)", tema:"Medicina legal: sexologia forense", img:"aula-17-maniaco-do-parque.webp", checkout:"https://pay.hotmart.com/C107942876Y"},
+  {n:"18", data:"25/11", caso:"O Caso do Crime da 113 Sul (DF)", tema:"Passo a passo para analisar manchas de sangue — parte 2", img:"aula-18-crime-113-sul.webp", checkout:"https://pay.hotmart.com/S107942921Q"}
 ];
 const PRECO = "29,90";
 
